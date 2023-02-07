@@ -24,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-white dark:bg-gray-700 sticky top-0">
+    <div className="navbar bg-white dark:bg-gray-700 sticky top-0 z-10">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,7 +63,13 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{menuItems}</ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn btn-info text-white btn-md" to={"/"}>
+        <Link
+          className="btn btn-info text-white btn-md"
+          to={
+            "https://drive.google.com/file/d/1i8cf5qixpgPsQmfkRlck1IdSHmiiAiAu/view?usp=sharing"
+          }
+          target="_blank"
+        >
           My Resume
           <FaFileDownload className="text-2xl ml-1" />
         </Link>
