@@ -10,6 +10,9 @@ const Navbar = () => {
         <Link to={"/"}>Home</Link>
       </li>
       <li>
+        <Link to={"/my-projects"}>My Projects</Link>
+      </li>
+      <li>
         <Link to={"/about"}>About Me</Link>
       </li>
       <li>
@@ -21,7 +24,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-white dark:bg-gray-700">
+    <div className="navbar bg-white dark:bg-gray-700 sticky top-0">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
