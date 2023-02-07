@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({ project }) => {
   const { authorImage, projectImage, title, name, id } = project;
   return (
-    <div className="w-full max-w-md px-8 py-4 mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
+    <div data-aos="zoom-in" className="w-full max-w-md px-8 py-4 mt-16 bg-white rounded-lg shadow-lg dark:bg-gray-800">
       <div className="flex justify-center -mt-16 md:justify-end">
         <img
           className="object-cover w-14 h-14 border-2 border-blue-500 rounded-full dark:border-blue-400"

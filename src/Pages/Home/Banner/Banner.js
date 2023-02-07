@@ -2,12 +2,28 @@ import React from "react";
 import { Link } from "react-router-dom";
 import banner from "../../../images/Akib Images.png";
 import { Typewriter } from "react-simple-typewriter";
+import "react-photo-view/dist/react-photo-view.css";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const Banner = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={banner} alt="" className="max-w-sm rounded-lg shadow-2xl" />
+        <PhotoProvider>
+          <div
+            className="foo"
+            data-aos="fade-up"
+          >
+            <PhotoView src={banner}>
+              <img
+                className="max-w-sm rounded-lg shadow-2xl"
+                src={banner}
+                alt=""
+              />
+            </PhotoView>
+          </div>
+        </PhotoProvider>
+
         <div>
           <h4 className="text-2xl py-3">Hey There 👋 I am</h4>
           <h1 className="text-5xl font-bold">Akib Rayhan</h1>

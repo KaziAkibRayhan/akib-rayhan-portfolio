@@ -2,7 +2,7 @@ import React from "react";
 
 const MySkills = () => {
   return (
-    <div className="my-10 p-8">
+    <div data-aos="zoom-in" className="my-10 p-8">
       <h3 className="text-3xl py-10 font-bold text-violet-500 text-center">
         My Skills
       </h3>

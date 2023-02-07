@@ -3,6 +3,8 @@ import { Link, useParams } from "react-router-dom";
 import projectImage1 from "../../../images/screenshot-monikas-therapy-auth.web.app-2023.02.07-21_38_34.png";
 import projectImage2 from "../../../images/screenshot-new-network-resale.web.app-2023.02.07-21_41_11.png";
 import projectImage3 from "../../../images/screenshot-the-school-web.web.app-2023.02.07-21_42_05.png";
+import "react-photo-view/dist/react-photo-view.css";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const ProjectDetails = () => {
   const router = useParams();
@@ -182,11 +184,17 @@ const ProjectDetails = () => {
                   </div>
                 </div>
                 <div className="mt-10 lg:mt-0 lg:col-start-1 lg:row-start-1">
-                  <img
-                    src={project.projectImage}
-                    alt=""
-                    className="mx-auto rounded-lg h-[500px] w-1/2 shadow-lg dark:bg-gray-500"
-                  />
+                  <PhotoProvider>
+                    <div className="foo">
+                      <PhotoView src={project.projectImage}>
+                        <img
+                          className="mx-auto cursor-pointer rounded-lg h-[500px] w-1/2 shadow-lg dark:bg-gray-500"
+                          src={project.projectImage}
+                          alt=""
+                        />
+                      </PhotoView>
+                    </div>
+                  </PhotoProvider>
                 </div>
               </div>
             </div>

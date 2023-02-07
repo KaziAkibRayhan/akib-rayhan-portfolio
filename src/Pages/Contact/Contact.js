@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="py-14 dark:bg-gray-600 dark:text-gray-50">
+    <section data-aos="zoom-in" className="py-14 dark:bg-gray-600 dark:text-gray-50">
         <h3 className="text-3xl text-center mb-10 text-violet-500 font-medium">Contact Me</h3>
       <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
         <div className="py-6 md:py-0 md:px-6">
